@@ -20,3 +20,8 @@ for clas in d:
 for i in range(len(a)):
     if a[i][4] == 'None':
         a[i][4]=str(d[a[i][3]])
+f=open('students.csv','w',encoding='utf')
+f.writelines('id,Name,titleProject_id,class,score\n')
+for x in a:
+    f.writelines(','.join(x)+'\n')
+f.close()
