@@ -24,7 +24,6 @@ shapka=a.pop(0)
 for i in range(len(a)):
     a[i]=a[i].strip().split(',')
     a[i]+=[login(a[i]),password()]
-    print(a[i])
 f=open('students_password.csv','w',encoding='utf8')
 f.write(shapka.strip()+',login,password\n')
 for x in a:
