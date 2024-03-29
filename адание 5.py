@@ -11,6 +11,7 @@ a=A.lower()
 A='*'+A+a+''
 a=open('students.csv',encoding='utf8').readlines()
 shapka=a.pop(0)
+
 for i in range(len(a)):
     a[i]=a[i].strip().split(',')
 
