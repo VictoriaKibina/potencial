@@ -1,6 +1,8 @@
 from random import  *
 def login(x):
     """
+
+
     Функция для создания логина пользоватеоя х-все даннфе о пользователе
     return-логин вида Фамилия_ИО
     """
@@ -8,12 +10,15 @@ def login(x):
     ln=f'{f}_{i[0]}{o[0]}'
     return ln
 
+
 def password():
     A='ABCDEFGHIJKLMNOPGRSTUVWXYZ'
     a=A.lower()
     c='0123456789'
     p=[choice(A), choice(A), choice(A), choice(a), choice(a), choice(a)]
     shuffle(p)
+
+
     p=''.join(p)
     return p
 
