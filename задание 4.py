@@ -7,6 +7,7 @@ def login(x):
     return-логин вида Фамилия_ИО
     """
     f,i,o=x[1].split()
+
     ln=f'{f}_{i[0]}{o[0]}'
     return ln
 
@@ -15,6 +16,7 @@ def password():
     A='ABCDEFGHIJKLMNOPGRSTUVWXYZ'
     a=A.lower()
     c='0123456789'
+
     p=[choice(A), choice(A), choice(A), choice(a), choice(a), choice(a)]
     shuffle(p)
 
